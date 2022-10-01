@@ -1,0 +1,16 @@
+{
+  "name": "intro-vue-two",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nazaré da Piedade",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
