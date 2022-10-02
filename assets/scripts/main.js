@@ -32,6 +32,9 @@ var app = new Vue({
     },
     updateProductImage(imagePath) {
       this.image = imagePath
+    },
+    removeFromCart() {
+      this.cart = this.cart > 0 ? this.cart - 1 : 0
     }
   }
 })
