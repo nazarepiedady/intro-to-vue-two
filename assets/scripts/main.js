@@ -29,6 +29,9 @@ var app = new Vue({
     },
     addToCart() {
       this.cart += 1
+    },
+    updateProductImage(imagePath) {
+      this.image = imagePath
     }
   }
 })
