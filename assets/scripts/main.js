@@ -24,6 +24,9 @@ var app = new Vue({
   methods: {
     capitalize(string) {
       return string[0].toUpperCase() + string.slice(1)
+    },
+    addToCart() {
+      this.cart += 1
     }
   }
 })
