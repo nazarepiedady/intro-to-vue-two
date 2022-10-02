@@ -12,29 +12,23 @@ var app = new Vue({
     variants: [
       {
         id: 2234,
-        color: 'green',
+        color: '#2cb67d',
         image: 'assets/images/greensocks.png'
       },
       {
         id: 2235,
-        color: 'blue',
+        color: '#232946',
         image: 'assets/images/bluesocks.png'
       }
     ],
     cart: 0
   },
   methods: {
-    capitalize(string) {
-      return string[0].toUpperCase() + string.slice(1)
-    },
     addToCart() {
       this.cart += 1
     },
     updateProductImage(imagePath) {
       this.image = imagePath
-    },
-    removeFromCart() {
-      this.cart = this.cart > 0 ? this.cart - 1 : 0
     }
   }
 })

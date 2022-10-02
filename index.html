@@ -26,12 +26,11 @@
 
           <div v-for="variant in variants" :key="variant.id">
             <p @mouseover="updateProductImage(variant.image)">
-              {{ capitalize(variant.color) }}
+              {{ variant.color }}
             </p>
           </div>
 
           <button @click="addToCart">Add to Cart</button>
-          <button @click="removeFromCart">Remove from Cart</button>
 
           <div class="cart">Cart({{ cart }})</div>
 
