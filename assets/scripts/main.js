@@ -19,6 +19,7 @@ var app = new Vue({
         color: 'blue'
       }
     ],
+    cart: 0
   },
   methods: {
     capitalize(string) {
