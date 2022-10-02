@@ -19,20 +19,6 @@ var app = new Vue({
         color: 'blue'
       }
     ],
-    sizes: [
-      {
-        id: 0,
-        value: 'sm'
-      },
-      {
-        id: 0,
-        value: 'md'
-      },
-      {
-        id: 0,
-        value: 'lg'
-      }
-    ]
   },
   methods: {
     capitalize(string) {
