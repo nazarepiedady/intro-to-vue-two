@@ -8,6 +8,16 @@ var app = new Vue({
       '80% cotton',
       '20% polyester',
       'Gender-neutral'
+    ],
+    variants: [
+      {
+        id: 2234,
+        color: 'green'
+      },
+      {
+        id: 2235,
+        color: 'blue'
+      }
     ]
   }
 })
