@@ -18,6 +18,20 @@ var app = new Vue({
         id: 2235,
         color: 'blue'
       }
+    ],
+    sizes: [
+      {
+        id: 0,
+        value: 'sm'
+      },
+      {
+        id: 0,
+        value: 'md'
+      },
+      {
+        id: 0,
+        value: 'lg'
+      }
     ]
   },
   methods: {
