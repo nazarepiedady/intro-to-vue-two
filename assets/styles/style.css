@@ -3,7 +3,7 @@ body {
   color:#282828;
 }
 
-#product {
+.product {
   display: flex;
 }
 
