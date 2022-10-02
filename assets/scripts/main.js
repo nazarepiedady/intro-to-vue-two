@@ -4,6 +4,6 @@ var app = new Vue({
     product: 'Socks',
     image: 'assets/images/greensocks.png',
     inventory: 8,
-    isInStock: true
+    onSale: true
   }
 })
