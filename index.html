@@ -25,7 +25,7 @@
           </ul>
 
           <div v-for="variant in variants" :key=variant.id>
-            {{ variant.color }}
+            {{ capitalize(variant.color) }}
           </div>
         </div>
       </div>
