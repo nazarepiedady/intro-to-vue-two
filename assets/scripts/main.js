@@ -4,7 +4,6 @@ var app = new Vue({
     brand: 'Vue Mastery',
     product: 'Socks',
     selectedVariant: 0,
-    inStock: false,
     details: [
       '80% cotton',
       '20% polyester',
@@ -41,5 +40,8 @@ var app = new Vue({
     image() {
       return this.variants[this.selectedVariant].image
     },
+    inStock() {
+      return this.variants[this.selectedVariant].quantity
+    }
   }
 })
