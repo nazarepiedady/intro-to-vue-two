@@ -29,7 +29,9 @@
                @mouseover="updateProductImage(variant.image)">
           </div>
 
-          <button @click="addToCart" :disabled="!inStock">Add to Cart</button>
+          <button @click="addToCart"
+                  :disabled="!inStock"
+                  :class="{ disabledButton: !inStock }">Add to Cart</button>
 
           <div class="cart">Cart({{ cart }})</div>
 
