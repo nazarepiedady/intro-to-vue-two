@@ -31,5 +31,10 @@ var app = new Vue({
     updateProductImage(imagePath) {
       this.image = imagePath
     }
+  },
+  computed: {
+    title() {
+      return `${this.brand} ${this.product}`
+    },
   }
 })
