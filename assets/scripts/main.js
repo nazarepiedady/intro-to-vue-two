@@ -14,12 +14,14 @@ var app = new Vue({
       {
         id: 2234,
         color: '#2cb67d',
-        image: 'assets/images/greensocks.png'
+        image: 'assets/images/greensocks.png',
+        quantity: 10
       },
       {
         id: 2235,
         color: '#232946',
-        image: 'assets/images/bluesocks.png'
+        image: 'assets/images/bluesocks.png',
+        quantity: 0
       }
     ],
     cart: 0
