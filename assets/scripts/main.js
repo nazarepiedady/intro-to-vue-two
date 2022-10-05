@@ -82,6 +82,5 @@ Vue.component('product', {
 
 
 var app = new Vue({
-  el: '#app',
-  
+  el: '#app'
 })
