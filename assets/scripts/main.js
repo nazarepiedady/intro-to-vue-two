@@ -37,8 +37,6 @@ Vue.component('product', {
       </div>
     </div>
   `,
-  props: {
-  },
   data() {
     return {
       brand: 'Vue Mastery',
@@ -95,5 +93,8 @@ Vue.component('product', {
 
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    premium: true
+  }
 })
