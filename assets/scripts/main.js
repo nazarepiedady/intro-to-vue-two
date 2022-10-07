@@ -63,7 +63,8 @@ Vue.component('product', {
   },
   methods: {
     addToProductCart() {
-      this.$emit('add-to-cart')
+      let id = this.variants[this.selectedVariant].id
+      this.$emit('add-to-cart', id)
     },
     updateProductImage(index) {
       this.selectedVariant = index
