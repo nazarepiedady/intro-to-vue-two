@@ -96,11 +96,11 @@ var app = new Vue({
   el: '#app',
   data: {
     premium: true,
-    cart: 0
+    cart: []
   },
   methods: {
-    updateCart() {
-      this.cart += 1
+    updateCart(productId) {
+      this.cart.push(productId)
     }
   }
 })
