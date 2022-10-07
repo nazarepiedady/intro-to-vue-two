@@ -94,7 +94,7 @@ Vue.component('product', {
 
 Vue.component('product-review', {
   template: `
-    <form class="review-form">
+    <form class="review-form" @sumbit.prevent="sendForm">
       <p>
         <label for="name">Name:</label>
         <input id="name" v-model="name">
@@ -122,6 +122,21 @@ Vue.component('product-review', {
       name: null,
       review: null,
       rating: null
+    }
+  },
+  methods: {
+    sendForm() {
+      let productReview = {
+        name: this.name,
+        review: this.review,
+        rating: this.rating
+      }
+
+      this.$emit('submit-review', productReview)
+
+      this.name = null
+      this.review = null
+      this.rating = null
     }
   }
 })
