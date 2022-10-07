@@ -92,6 +92,16 @@ Vue.component('product', {
   }
 })
 
+Vue.component('product-review', {
+  template: `
+    <input v-model="name">
+  `,
+  data() {
+    return {
+      name: null
+    }
+  }
+})
 
 var app = new Vue({
   el: '#app',
