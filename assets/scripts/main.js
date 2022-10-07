@@ -32,8 +32,6 @@ Vue.component('product', {
                   :class="{ disabledButton: !inStock }">
           Add to Cart
         </button>
-
-        <div class="cart">Cart({{ cart }})</div>
       </div>
     </div>
   `,
@@ -60,8 +58,7 @@ Vue.component('product', {
           image: 'assets/images/bluesocks.png',
           quantity: 0
         }
-      ],
-      cart: 0
+      ]
     }
   },
   methods: {
@@ -95,6 +92,7 @@ Vue.component('product', {
 var app = new Vue({
   el: '#app',
   data: {
-    premium: true
+    premium: true,
+    cart: 0
   }
 })
