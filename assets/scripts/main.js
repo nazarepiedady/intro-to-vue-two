@@ -71,7 +71,8 @@ Vue.component('product', {
   },
   computed: {
     title() {
-      return `${this.brand} ${this.product}`
+      let heading = `${this.brand} ${this.product}`
+      return heading
     },
     image() {
       let image = this.variants[this.selectedVariant].image
