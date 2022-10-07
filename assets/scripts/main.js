@@ -74,7 +74,8 @@ Vue.component('product', {
       return `${this.brand} ${this.product}`
     },
     image() {
-      return this.variants[this.selectedVariant].image
+      let image = this.variants[this.selectedVariant].image
+      return image
     },
     inStock() {
       return this.variants[this.selectedVariant].quantity
