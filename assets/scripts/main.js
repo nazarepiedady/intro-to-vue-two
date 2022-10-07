@@ -94,11 +94,34 @@ Vue.component('product', {
 
 Vue.component('product-review', {
   template: `
-    <input v-model="name">
+    <form class="review-form">
+      <p>
+        <label for="name">Name:</label>
+        <input id="name" v-model="name">
+      </p>
+
+      <p>
+        <label for="review">Review:</label>
+        <textarea id="review" v-model="review"></textarea>
+      </p>
+
+      <p>
+        <label for="rating">Rating:</label>
+        <select id="rating" v-model="rating">
+          <option>5</option>
+          <option>4</option>
+          <option>3</option>
+          <option>2</option>
+          <option>1</option>
+        </select>
+      </p>
+    </form>
   `,
   data() {
     return {
-      name: null
+      name: null,
+      review: null,
+      rating: null
     }
   }
 })
