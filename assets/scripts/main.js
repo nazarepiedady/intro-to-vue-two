@@ -34,7 +34,7 @@ Vue.component('product', {
         </button>
       </div>
 
-      <product-review></product-review>
+      <product-review @submit-review="addProductReview"></product-review>
     </div>
   `,
   data() {
@@ -60,7 +60,8 @@ Vue.component('product', {
           image: 'assets/images/bluesocks.png',
           quantity: 0
         }
-      ]
+      ],
+      reviews: []
     }
   },
   methods: {
@@ -70,6 +71,9 @@ Vue.component('product', {
     },
     updateProductImage(index) {
       this.selectedVariant = index
+    },
+    addProductReview(review) {
+      this.reviews.push(review)
     }
   },
   computed: {
@@ -96,7 +100,7 @@ Vue.component('product', {
 
 Vue.component('product-review', {
   template: `
-    <form class="review-form" @sumbit.prevent="sendForm">
+    <form class="review-form" @submit.prevent="sendForm">
       <p>
         <label for="name">Name:</label>
         <input id="name" v-model="name">
@@ -116,6 +120,10 @@ Vue.component('product-review', {
           <option>2</option>
           <option>1</option>
         </select>
+      </p>
+
+      <p>
+        <button type="submit">Submit</button>
       </p>
     </form>
   `,
