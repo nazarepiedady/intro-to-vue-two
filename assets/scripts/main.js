@@ -113,5 +113,11 @@ var app = new Vue({
     updateCart(productId) {
       this.cart.push(productId)
     }
+  },
+  computed: {
+    cartLength() {
+      let length = this.cart.length
+      return length
+    }
   }
 })
