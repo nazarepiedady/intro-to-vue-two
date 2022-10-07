@@ -33,6 +33,8 @@ Vue.component('product', {
           Add to Cart
         </button>
       </div>
+
+      <product-review></product-review>
     </div>
   `,
   data() {
