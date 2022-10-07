@@ -27,7 +27,7 @@ Vue.component('product', {
              @mouseover="updateProductImage(index)">
         </div>
 
-        <button @click=""
+        <button @click="addToProductCart"
                   :disabled="!inStock"
                   :class="{ disabledButton: !inStock }">
           Add to Cart
@@ -62,6 +62,9 @@ Vue.component('product', {
     }
   },
   methods: {
+    addToProductCart() {
+      this.$emit('add-to-cart')
+    },
     updateProductImage(index) {
       this.selectedVariant = index
     }
