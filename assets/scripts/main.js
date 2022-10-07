@@ -78,7 +78,8 @@ Vue.component('product', {
       return image
     },
     inStock() {
-      return this.variants[this.selectedVariant].quantity
+      let isInStock = this.variants[this.selectedVariant].quantity
+      return isInStock
     },
     shipping() {
       if (this.premium) {
