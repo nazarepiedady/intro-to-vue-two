@@ -34,6 +34,18 @@ Vue.component('product', {
         </button>
       </div>
 
+      <div>
+        <h2>Reviews</h2>
+        <p v-if="!reviews.length">There are no reviews yet.</p>
+        <ul v-else>
+          <li v-for="review in reviews">
+            <h3>{{ review.name }}</h3>
+            <p>Rating: {{ review.rating }}</p>
+            <p>{{ review.review }}</p>
+          </li>
+        </ul>
+      </div>
+
       <product-review @submit-review="addProductReview"></product-review>
     </div>
   `,
