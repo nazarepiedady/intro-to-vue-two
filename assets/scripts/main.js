@@ -115,12 +115,12 @@ Vue.component('product-review', {
     <form class="review-form" @submit.prevent="sendForm">
       <p>
         <label for="name">Name:</label>
-        <input id="name" v-model="name" required>
+        <input id="name" v-model="name">
       </p>
 
       <p>
         <label for="review">Review:</label>
-        <textarea id="review" v-model="review" required></textarea>
+        <textarea id="review" v-model="review"></textarea>
       </p>
 
       <p>
@@ -143,7 +143,8 @@ Vue.component('product-review', {
     return {
       name: null,
       review: null,
-      rating: null
+      rating: null,
+      errors: []
     }
   },
   methods: {
