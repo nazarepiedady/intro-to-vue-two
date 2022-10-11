@@ -115,7 +115,7 @@ Vue.component('product-review', {
     <form class="review-form" @submit.prevent="sendForm">
       <p>
         <label for="name">Name:</label>
-        <input id="name" v-model="name">
+        <input id="name" v-model="name" required>
       </p>
 
       <p>
