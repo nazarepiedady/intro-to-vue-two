@@ -149,17 +149,17 @@ Vue.component('product-review', {
   },
   methods: {
     sendForm() {
-      let productReview = {
-        name: this.name,
-        review: this.review,
-        rating: this.rating
+      if (this.name && this.review && this.rating) {
+        let productReview = {
+          name:   this.name,
+          review: this.review,
+          rating: this.rating
+        }
+        this.$emit('submit-review', productReview)
+        this.name = null
+        this.review = null
+        this.rating = null
       }
-
-      this.$emit('submit-review', productReview)
-
-      this.name = null
-      this.review = null
-      this.rating = null
     }
   }
 })
