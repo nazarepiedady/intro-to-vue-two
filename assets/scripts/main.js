@@ -177,7 +177,20 @@ Vue.component('product-review', {
   }
 })
 
-Vue.component('product-tabs', {})
+Vue.component('product-tabs', {
+  template: `
+    <div>
+      <span class="tab" v-for="(tab, index) in tabs" :key="index">
+        {{ tab }}
+      </span>
+    </div>
+  `,
+  data() {
+    return {
+      tabs: ['Reviews', 'Make a review']
+    }
+  }
+})
 
 var app = new Vue({
   el: '#app',
