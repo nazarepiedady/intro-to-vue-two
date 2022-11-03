@@ -177,6 +177,8 @@ Vue.component('product-review', {
   }
 })
 
+Vue.component('product-tabs', {})
+
 var app = new Vue({
   el: '#app',
   data: {
